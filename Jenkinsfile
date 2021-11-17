@@ -6,7 +6,7 @@ pipeline {
   stages {
       stage('INSTALL DEPENDENCIES') {
         steps {
-          sh 'npx yarn'
+          sh 'npm install'
         }
       }
 
