@@ -27,7 +27,7 @@ if (isIos) {
   // KeyboardManager.setToolbarPreviousNextButtonEnable(false);
   // KeyboardManager.setToolbarTintColor('#0000FF'); // Only #000000 format is supported
   // KeyboardManager.setToolbarBarTintColor('#FFFFFF'); // Only #000000 format is supported
-  // KeyboardManager.setShouldShowToolbarPlaceholder(true);
+  KeyboardManager.setShouldShowToolbarPlaceholder(true);
   KeyboardManager.setOverrideKeyboardAppearance(true);
   KeyboardManager.setKeyboardAppearance('default'); // "default" | "light" | "dark"
   KeyboardManager.setShouldResignOnTouchOutside(true);
