@@ -1,6 +1,6 @@
 pipeline {
   agent {
-    label 'mac-mini'
+    label 'master'
   }
 
   stages {
