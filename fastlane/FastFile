@@ -85,7 +85,7 @@ platform :android do
       end
       gradle(task: 'clean', project_dir: 'android/')
       gradle(task: "assemble", build_type: "Release", project_dir: "android/" )
-      File.rename(ANDROID_BUILD_PATH_DEFAULT, ANDROID_BUILD_PATH_UPLOAD)
+      File.rename(ANDROID_BUILD_PATH_DEFAULT, "../#{ANDROID_BUILD_PATH_UPLOAD}")
       upload_to_appcenter(app_name: "#{ENV['EXPORT_APP_ANDROID_NAME']}", file: "#{ANDROID_BUILD_PATH_UPLOAD}")
   end
 end
