@@ -6,7 +6,7 @@ pipeline {
   stages {
       stage('INSTALL DEPENDENCIES') {
         steps {
-          sh 'yarn'
+          sh 'npx yarn'
         }
       }
 
@@ -17,7 +17,7 @@ pipeline {
         }
 
         steps {
-          sh 'yarn build:apk'
+          sh 'npm run build:apk'
         }
       }
   }
